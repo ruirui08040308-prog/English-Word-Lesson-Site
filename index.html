@@ -1,0 +1,40 @@
+<!-- メニュー画面 -->
+<div id="menu" class="screen">
+  <h1>英単語ゲーム</h1>
+  <button onclick="showAdd()">英単語を追加</button>
+  <button onclick="showLesson()">Lesson</button>
+</div>
+
+<!-- 追加画面 -->
+<div id="add" class="screen">
+  <h2>英単語を追加</h2>
+
+  <input id="jp" placeholder="日本語">
+  <input id="en" placeholder="英語">
+  <button onclick="addWord()">追加</button>
+
+  <h3>追加した単語一覧</h3>
+  <ul id="wordList"></ul>
+
+  <button onclick="showMenu()">戻る</button>
+</div>
+
+<!-- Lesson画面 -->
+<div id="lesson" class="screen">
+  <h2>Lesson</h2>
+
+  <p id="question">日本語</p>
+  <input id="answer" placeholder="英語を書く">
+
+  <button onclick="check()">答える</button>
+  <button onclick="next()">次の問題</button>
+
+  <p id="result"></p>
+
+  <button onclick="showMenu()">戻る</button>
+
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="theme-color" content="#ffffff">
+
+</div>
